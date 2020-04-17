@@ -1,0 +1,111 @@
+/* ----------------------------------------------------------- */
+/* ------------------------- BASIC SETUP ----------------------*/
+/* ----------------------------------------------------------- */
+:root {
+	/* Primary */
+	--Very-Dark-Blue: hsl(243, 87%, 12%);
+	--Desaturated-Blue: hsl(238, 22%, 44%);
+	/* Accent */
+	--Bright-Blue: hsl(224, 93%, 58%);
+	--Moderate-Cyan: hsl(170, 45%, 43%);
+	/* Neutral */
+	--Light-Grayish-Blue: hsl(240, 75%, 98%);
+	--Light-Gray: hsl(0, 0%, 75%);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: var(--Light-Grayish-Blue);
+	padding: 30px 40px;
+}
+/* ----------------------------------------------------------- */
+/* --------------------------- CSS GRID -----------------------*/
+/* ----------------------------------------------------------- */
+#wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+header#wrapper {
+	grid-template-areas: 'nav-brand links';
+}
+
+main#wrapper {
+	grid-template-areas:
+		'content image'
+		'content image'
+		'card .'
+}
+
+footer#wrapper {
+	grid-template-areas:
+		'nav-brand .'
+		'link-1 link-2'
+}
+
+.footer-top {
+	grid-row: 4;
+	grid-column: 1;
+}
+
+.main-form {
+	grid-row: 4;
+	grid-column: 2;
+}
+
+.span-1-of-2 {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.span-2-of-2 {
+	grid-row: 2;
+	grid-column: 2;
+}
+
+/* ----------------------------------------------------------- */
+/* -------------------------- NAVIGATION ----------------------*/
+/* ----------------------------------------------------------- */
+
+.nav-brand img {
+	width: 6%;
+}
+
+/* ----------------------------------------------------------- */
+/* ------------------------- HERO-CONTENT ---------------------*/
+/* ----------------------------------------------------------- */
+
+.hero-img img {
+	width: 50%;
+}
+
+.footer-bottom {
+	display: inline;
+	grid-template-columns: 1fr;
+}
+/* ----------------------------------------------------------- */
+/* ---------------------------- FOOTER ------------------------*/
+/* ----------------------------------------------------------- */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
