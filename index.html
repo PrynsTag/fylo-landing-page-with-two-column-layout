@@ -19,12 +19,14 @@
 </head>
 <body>
 
-  <header id="wrapper">
+  <header id="wrapper" class="navigation">
     <div class="nav-brand">
-      <img src="./images/logo.svg" alt="logo">
+      <a href="#">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
     </div>
 
-    <ul>
+    <ul class="navigation-links">
       <li><a href="">Features</a></li>
       <li><a href="">Team</a></li>
       <li><a href="">Sign In</a></li>
@@ -33,24 +35,28 @@
 
   <main id="wrapper">
     <div class="hero-content">
-      <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p>Fylo stores your most important files in one secure location.
+      <h1 class="hero-heading">All your files in one secure location, accessible anywhere.</h1>
+      <p class="hero-info">
+        Fylo stores your most important files in one secure location.
         Access them wherever you need, share and collaborate with friends,
         family, and co-workers.
       </p>
 
-      <form action="POST">
+      <form class="main-form" action="POST">
         <label for="email" aria-placeholder="Enter your email...">
-          <input type="email" id="email" placeholder="Enter your email...">
+        <input type="email" id="email" placeholder="Enter your email...">
         </label>
-        <div class="btn">Get Started</div>
+        <a href="#">
+          <div class="btn">Get Started</div>
+        </a>
       </form>
     </div>
-    <div class="hero-img">
+
+    <div class="hero-img-1">
       <img src="./images/illustration-1.svg" alt="illustration-1">
     </div>
 
-    <div class="hero-bottom">
+    <section class="hero-bottom">
       <h1>Stay productive, wherever you are</h1>
       <p>
         Never let location be an issue when accessing your files. Fylo has you
@@ -62,23 +68,23 @@
       </p>
 
       <div class="see-how"><a href="#">See how Fylo works</a></div>
-    </div>
 
-    <div class="hero-img">
+      <div class="testimonial-card">
+        <img src="./images/icon-quotes.svg" alt="icon-quotes">
+        <blockquote>
+          Fylo has improved our team productivity by an order of magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine.
+          <cite>
+            <img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
+            Kyle Burton
+            Founder & CEO, Huddle
+          </cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <div class="hero-img-2">
       <img src="./images/illustration-2.svg" alt="illustration-2">
-    </div>
-
-    <div class="testimonial-card">
-      <img src="./images/icon-quotes.svg" alt="icon-quotes">
-      <blockquote>
-        Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration machine.
-        <cite>
-          <img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
-          Kyle Burton
-          Founder & CEO, Huddle
-        </cite>
-      </blockquote>
     </div>
 
     <div class="footer-top">
